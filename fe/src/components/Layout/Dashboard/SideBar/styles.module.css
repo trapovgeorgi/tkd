@@ -1,0 +1,6 @@
+.outer {
+	background-color: #183153;
+	width: 150px;
+	height: calc(100vh - 80px);
+	transition: width 0.3s ease-in-out;
+}

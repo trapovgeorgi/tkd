@@ -1,0 +1,7 @@
+:root {
+	--primary: #183153;
+}
+.box{
+    background-color: var(--primary);
+    padding: 150px 25px;
+}

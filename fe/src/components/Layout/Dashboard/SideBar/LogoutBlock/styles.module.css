@@ -1,0 +1,33 @@
+.block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	font-size: 20px;
+	overflow: hidden;
+}
+.icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 50px;
+	max-width: 50px;
+	color: white;
+	width: 25px;
+	height: 100%;
+	width: 100%;
+}
+
+.text{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	color: white;
+}
+
+.block:hover{
+	background-color: #214270;
+	cursor: pointer;
+}

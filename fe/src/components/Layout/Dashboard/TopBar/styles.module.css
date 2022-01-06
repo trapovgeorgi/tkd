@@ -1,0 +1,43 @@
+.outer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	color: #183153;
+	height: 80px;
+}
+
+.logo {
+	margin: 0 50px;
+	font-size: 25px;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+
+	position: absolute;
+	height: 100%;
+	right: 0;
+	width: 200px;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.icon {
+	margin: 0 10px;
+	font-size: 20px;
+}
+
+.user {
+	text-align: center;
+}
+
+.icon:hover {
+	color: cyan;
+}

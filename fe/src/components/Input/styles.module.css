@@ -1,0 +1,57 @@
+:root {
+	--label: #183153;
+	--hover_bg: #18315320;
+	--hover_secondary: white;
+	--input_bg: #eff1f2;
+	--hover_border: #183153;
+}
+
+.input__group {
+	margin: 5px;
+	position: relative;
+	width: 300px;
+}
+
+input {
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid var(--label);
+	width: 100%;
+	height: 50px;
+	font-size: 18px;
+	padding-left: 10px;
+	line-height: 147.6%;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.input__label {
+	font-size: 18px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	line-height: 147.6%;
+	color: var(--label);
+	transition: top 0.2s;
+	cursor: text;
+}
+
+input:hover {
+	background: var(--hover_secondary);
+	border-color: var(--hover_border);
+}
+
+input:focus + .input__label,
+input:valid + .input__label {
+	top: 0;
+	font-size: 18px;
+	margin-bottom: 32px;
+}
+
+input {
+	background: var(--input_bg);
+}
