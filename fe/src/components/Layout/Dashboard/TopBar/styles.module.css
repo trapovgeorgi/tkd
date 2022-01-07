@@ -1,27 +1,40 @@
 .outer {
-	position: relative;
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	position: relative;
 	background-color: white;
 	color: #183153;
 	height: 80px;
 }
 
-.logo {
-	margin: 0 50px;
-	font-size: 25px;
+.logo__block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: whitesmoke;
+	width: 40%;
 }
 
-.block {
+.logo {
+	margin: 0 10px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.user__block {
+	position: relative;
+	width: 60%;
+}
+
+.user__block__right {
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
-
-	position: absolute;
 	height: 100%;
-	right: 0;
-	width: 200px;
+	right: 20px;
 }
 
 .icons {
@@ -34,10 +47,26 @@
 	font-size: 20px;
 }
 
-.user {
+.user__options {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
+.option{
+	margin: 5px;
+}
+
+.option:hover{
+	cursor: pointer;
+	color: cyan;
+}
 .icon:hover {
 	color: cyan;
 }
+
+@media only screen and (max-width: 700px) {
+	.logo {
+		visibility: hidden;
+	}
+  }

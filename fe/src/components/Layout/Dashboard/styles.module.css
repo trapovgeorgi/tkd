@@ -1,8 +1,4 @@
-.box{
-    display: flex;
-    flex-direction: row;
-}
-
 .body{
-    transition: width 0.3s ease-in-out;
+    margin-left: 50px;
+    height: calc(100vh - 80px);
 }

@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./styles.module.css";
-import { faChild, faSignInAlt, faSignOutAlt, faCalendar, faVideo, faArchive, faPhone, faPhotoVideo, faHistory, faRunning, faArchway, faMailBulk, faPoll } from "@fortawesome/free-solid-svg-icons";
+import { faChild, faSignInAlt, faCalendar, faVideo, faArchive, faPhone, faPhotoVideo, faHistory, faRunning, faArchway, faMailBulk, faPoll } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import LinkBlock from "./LinkBlock";
-import LogoutBlock from "./LogoutBlock";
 import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
 
 export default function SideBar(props) {
@@ -23,7 +22,6 @@ export default function SideBar(props) {
 			<LinkBlock icon={faConnectdevelop} text="Връзки" to="/children"/>
 			<LinkBlock icon={faPhone} text="Контакти" to="/children"/>
 			<LinkBlock icon={faSignInAlt} text="Влизане" to="/login"/>
-			<LogoutBlock icon={faSignOutAlt} text="Излезни"/>
 		</div>
 	);
 }

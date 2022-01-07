@@ -1,4 +1,6 @@
 .outer {
+	z-index: 2;
+	position: absolute;
 	background-color: #183153;
 	width: 150px;
 	height: calc(100vh - 80px);
