@@ -24,7 +24,7 @@ export default function TopBar(props) {
 		<div className={styles.outer} >
 			<div className={styles.logo__block} onClick={toggleSideBar}>
 				<span className={styles.logo}>
-					Спортен клуб: Българско обединение по Таекуондо "Похион"
+					Спортен клуб, Българско обединение по Таекуондо "Похион"
 				</span>
 			</div>
 			<div className={styles.user__block}>
