@@ -1,13 +1,13 @@
 import { faBell, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styles from "./styles.module.css";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { logoutUser } from "../../../../api/auth";
 
-
 export default function TopBar(props) {
-	const navigate = useNavigate()
+	const navigate = useNavigate();
 
 	const toggleSideBar = () => {
 		props.setToggleSideBarOpposite();
@@ -21,8 +21,14 @@ export default function TopBar(props) {
 	};
 
 	return (
-		<div className={styles.outer} >
-			<div className={styles.logo__block} onClick={toggleSideBar}>
+		<div className={styles.outer}>
+			<div className={styles.logo__block}>
+				<div className={styles.navbutton__block} onClick={toggleSideBar}>
+					<FontAwesomeIcon
+						className={styles.navbutton}
+						icon={faBars}
+					></FontAwesomeIcon>
+				</div>
 				<span className={styles.logo}>
 					Спортен клуб, Българско обединение по Таекуондо "Похион"
 				</span>
@@ -41,7 +47,9 @@ export default function TopBar(props) {
 					</div>
 					<div className={styles.user__options}>
 						<span className={styles.option}>потребител</span>
-						<span className={styles.option} onClick={logout}>изход</span>
+						<span className={styles.option} onClick={logout}>
+							изход
+						</span>
 					</div>
 				</div>
 			</div>

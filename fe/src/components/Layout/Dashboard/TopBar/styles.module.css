@@ -7,12 +7,23 @@
 	height: 80px;
 }
 
-.logo__block{
+.navbutton__block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbutton {
+	font-size: 30px;
+	margin: 0 20px;
+}
+
+.logo__block {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	background-color: whitesmoke;
 	width: 40%;
 }
 
@@ -53,11 +64,11 @@
 	flex-direction: column;
 }
 
-.option{
+.option {
 	margin: 5px;
 }
 
-.option:hover{
+.option:hover {
 	cursor: pointer;
 	color: cyan;
 }
@@ -67,6 +78,6 @@
 
 @media only screen and (max-width: 700px) {
 	.logo {
-		visibility: hidden;
+		display: none;
 	}
-  }
+}
